@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
              }
              finally {
-                 Intent welcomeIntent= new Intent(MainActivity.this,WelcomeActivity.class);
-                 startActivity(welcomeIntent);
+
+                 startActivity(new Intent(getApplicationContext(),WelcomeActivity.class));
              }
 
             }
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-
         finish();
     }
 }

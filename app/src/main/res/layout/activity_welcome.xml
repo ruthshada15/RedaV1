@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/redav1" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtloginemail"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -26,12 +26,12 @@
         android:layout_marginStart="64dp"
         android:layout_marginBottom="343dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
 
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtloginpassword"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -51,7 +51,10 @@
         android:layout_marginEnd="106dp"
         android:layout_marginBottom="205dp"
         android:background="#009975"
-        android:text="Log In" />
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        />
 
     <TextView
         android:id="@+id/textView2"
@@ -65,17 +68,19 @@
         android:textAlignment="center"
         android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="97dp"
-        android:layout_marginBottom="106dp"
-        android:textSize="23sp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="104dp"
+        android:background="@color/colorAccent"
+        android:text="Sign Up"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
 
-        android:text="Sign Up" />
 </RelativeLayout>
